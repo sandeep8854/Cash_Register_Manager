@@ -43,6 +43,7 @@ function nextbuttonHandler() {
   if (billAmount.value <= 0) {
     console.log("Bill less than 0");
     errorBill[0].innerText = "Bill Amount Should be greater than Zero";
+    errorBill.style.marginBottom = "1.7rem";
   } else {
     cashGivenDiv[0].style.display = "block";
     btn_2Div[0].style.display = "block";
@@ -60,7 +61,7 @@ function checkButtonHandler() {
     }
 
     if (Number(billAmount.value) === Number(cashGiven.value)) {
-      errorCash[0].innerText = "No need to be returned any amount.";
+      errorCash[0].innerText = "No need to be returned any amount.🥰";
     }
     if (Number(cashGiven.value) < Number(billAmount.value)) {
       console.log(typeof cashGiven);
