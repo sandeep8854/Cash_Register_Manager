@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRM</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Lato:wght@300;400;900&amp;family=Rubik:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="heading-2">Cash Register Manager</h2>
+      <p class="discriptionOfCRM">
+        Enter the bill amount and cash given by the customer and know minimum
+        number of notes and coin to return to you.
+      </p>
+      <label for="bill-amount">Bill amount</label>
+      <input
+        id="bill-amount"
+        type="number"
+        placeholder="Enter the bill amount"
+      />
+      <button class="btn btn-modifier" id="next">Next!</button>
+      <p class="error-bill"></p>
+
+      <div class="show">
+        <div style="display: none" class="fordoingCenter">
+          <label for="cash-given">Cash given by customer</label>
+          <input
+            id="cash-given"
+            type="number"
+            placeholder="Enter the cash given"
+          />
+        </div>
+        <div style="display: none" class="btn--2">
+          <button class="btn btn-modifire-1" id="btn">Check</button>
+          <button class="btn btn-modifire-2" id="btn">Clear</button>
+        </div>
+        <p class="error-cash"></p>
+        <div class="show-table">
+          <table class="money-change-table">
+            <caption class="table-caption">
+              Return change
+            </caption>
+            <tbody>
+              <tr>
+                <th>No.of notes</th>
+                <td class="notes"></td>
+                <td class="notes"></td>
+                <td class="notes"></td>
+                <td class="notes"></td>
+                <td class="notes"></td>
+                <td class="notes"></td>
+                <td class="notes"></td>
+                <td class="notes"></td>
+              </tr>
+              <tr>
+                <th>Notes</th>
+                <td>2000</td>
+                <td>1000</td>
+                <td>500</td>
+                <td>100</td>
+                <td>50</td>
+                <td>10</td>
+                <td>5</td>
+                <td>1</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
