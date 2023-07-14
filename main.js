@@ -66,7 +66,7 @@ function checkButtonHandler() {
     if (Number(cashGiven.value) < Number(billAmount.value)) {
       console.log(typeof cashGiven);
       // console.log("Do you wanna wash plate.");
-      errorCash[0].innerText = "Do you want to pay with G Pay.🥰";
+      errorCash[0].innerText = "Do you want to pay with G Pay (G***d) Pay.🥰";
     }
   } else {
     errorCash[0].innerText = "Invalid Cash given 😥";
