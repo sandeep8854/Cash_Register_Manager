@@ -67,7 +67,7 @@ function checkButtonHandler() {
       console.log(typeof cashGiven);
       //
       //commenting
-      errorCash[0].innerText = "Do you want to pay with G Pay (G***d).🥰";
+      errorCash[0].innerText = "Do you want to pay with G Pay (G***d Pay).🥰";
     }
   } else {
     errorCash[0].innerText = "Invalid Cash given 😥";
