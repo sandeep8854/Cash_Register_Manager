@@ -92,6 +92,7 @@ label {
   justify-content: center;
   align-items: center;
   display: none;
+  margin-left: 14rem;
 }
 #btn {
   margin-right: 1.5rem;
